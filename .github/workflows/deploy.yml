@@ -24,6 +24,9 @@ jobs:
       - name: Setup Serverless Framework
         run: npm install -g serverless
 
+      - name: Verify identity
+        run: aws sts get-caller-identity
+
       - name: Deploy to AWS Lambda
         run: serverless deploy --stage prod
         env:
