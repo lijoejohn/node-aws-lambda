@@ -1,4 +1,4 @@
-name: Deploy Lambda to AWS on Merge to Main
+name: Deploy Lambda to AWS on Merge
 
 on:
   push:
